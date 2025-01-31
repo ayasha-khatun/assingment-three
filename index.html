@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- daisyUi and tailwind Css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+     <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/a954b9d566.js" crossorigin="anonymous"></script>
+
+    <style>
+      .font-sora{
+        font-family: "Sora", serif;
+      }
+      .font-adlam{
+        font-family: "ADLaM Display", serif;
+      }
+      
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'primary-bg': 'rgb(255, 249, 244)',
+              'secondary-bg': '#FFDC26',
+              'text-primary': 'rgb(17, 17, 17)',
+              'text-secondary': '#111111',
+            },
+            
+          }
+        }
+      }
+    </script>
 </head>
-<body>
-    
+<body class="font-sora">
+    <header>
+        <nav class="bg-primary-bg">
+            <div class="navbar max-w-screen-lg mx-auto">
+                <div class="navbar-start">
+                  <img src="c1-assets/logo-header.png" alt="">
+                  <a class="btn btn-ghost text-xl">Browse<span class="">4</span>Pets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <div class="hidden lg:block">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="btn btn-outline btn-warning font-text-secondary">Login</button>
+                    <a class="btn bg-secondary-bg px-8">Button</a>
+                  </div>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <i class="fa-solid fa-bars"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" /></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Find a pet</a></li>
+                      <li><a>Breeds</a></li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+
+        <div class="max-w-screen-lg h-screen mx-auto bg-[url('/c1-assets/cat-big.png')] bg-cover space-y-4">
+           <h1 class="font-adlam text-5xl font-text-primary font-bold mt-28">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+           <p class="font-text-secondary text-xl w-2/4">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+           <button class="btn bg-secondary-bg px-8 ">Find a pet</button>
+        </div>
+    </header>
+
+    <!-- main section -->
+
 </body>
 </html>
